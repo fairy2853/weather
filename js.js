@@ -23,8 +23,8 @@ button.addEventListener("click",function(){
   html.innerHTML='';
   let element_to_delete = document.getElementById('e1');
   time_table.removeChild(element_to_delete);
-  url=`https://api.openweathermap.org/data/2.5/forecast?q=${document.getElementById('search').value}&lang=ua&appid=1ce9370a31ca136fdf72c09c9c571ecf`
-  getCoords(`https://api.openweathermap.org/data/2.5/forecast?q=${document.getElementById('search').value}&lang=ua&appid=1ce9370a31ca136fdf72c09c9c571ecf`,type)
+  url=`https://pro.openweathermap.org/data/2.5/forecast/hourly?=${document.getElementById('search').value}&lang=ua&appid=1ce9370a31ca136fdf72c09c9c571ecf`
+  getCoords(`https://pro.openweathermap.org/data/2.5/forecast/hourly?=${document.getElementById('search').value}&lang=ua&appid=1ce9370a31ca136fdf72c09c9c571ecf`,type)
   }
 })
 
