@@ -23,8 +23,8 @@ button.addEventListener("click",function(){
   html.innerHTML='';
   let element_to_delete = document.getElementById('e1');
   time_table.removeChild(element_to_delete);
-  url=`https://pro.openweathermap.org/data/2.5/forecast/hourly?=${document.getElementById('search').value}&lang=ua&appid=1ce9370a31ca136fdf72c09c9c571ecf`
-  getCoords(`https://pro.openweathermap.org/data/2.5/forecast/hourly?=${document.getElementById('search').value}&lang=ua&appid=1ce9370a31ca136fdf72c09c9c571ecf`,type)
+  url=`https://pro.openweathermap.org/data/2.5/forecast/hourly?=${document.getElementById('search').value}&lang=ua&appid=aa4b64e8915b3222a7ccce14348b05fb`
+  getCoords(`https://pro.openweathermap.org/data/2.5/forecast/hourly?=${document.getElementById('search').value}&lang=ua&appid=aa4b64e8915b3222a7ccce14348b05fb`,type)
   }
 })
 
@@ -80,7 +80,7 @@ function getCoords(url){
     if(url!==undefined){
       xhr.open("GET",url)
     }else{
-      xhr.open("GET",`https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&lang=ua&appid=1ce9370a31ca136fdf72c09c9c571ecf`);
+      xhr.open("GET",`https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&lang=ua&appid=aa4b64e8915b3222a7ccce14348b05fb`);
     }
     
     xhr.responseType="json";
